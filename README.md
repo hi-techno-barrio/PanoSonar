@@ -8,3 +8,12 @@ Note that speech recognition and audio classification are complex and challengin
 In this updated version of the code, we added a new function `extract_features` that uses the librosa library to extract Mel-Frequency Cepstral Coefficients (MFCCs) from the recorded audio data. The MFCCs are a commonly used feature for audio classification tasks. We also added a new function `classify_sound` that uses the pre-trained VGG16 model to classify the extracted features into one of the three categories: human speech, animal sound, or other sound. The `preprocess_input` function from the VGG16 module is used to preprocess the features before feeding them into the model.
 
 Note that the pre-trained model used in this example may not be suitable for all types of sounds and environments, and you may need to train or fine-tune your own model or use a different model that is better suited for your specific use case. You may also need to adjust the settings and parameters of the feature extraction and classification methods to achieve the desired performance and accuracy.
+
+
+In this updated version of the code, we use the pyaudio library to record audio from the built-in microphone of the web camera. We also use the numpy and librosa libraries for feature extraction and the wave module for reading and writing audio data in WAV format. The classification is done using the same simple rule-based method based on a threshold value of the first two MFCC coefficients of the features.
+
+Note that the performance of this method may depend on the quality and placement of the built-in microphone and the ambient noise level, and you may need to adjust the settings and parameters of the recording and feature extraction methods to achieve the desired performance and accuracy.
+
+
+
+
