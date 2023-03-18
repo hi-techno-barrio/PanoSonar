@@ -1,4 +1,4 @@
-# PanoSonar-sonar1py
+# PanoSonar
 
 In this updated version of the code, we added a new function recognize_speech that uses the Google Speech Recognition API to recognize the speech from the recorded audio data. The AudioFile class from the SpeechRecognition library is used to load the audio data, and the recognize_google method is used to perform the speech recognition. If words are detected, they are printed out, otherwise, a message indicating no words are detected is printed out.
 
